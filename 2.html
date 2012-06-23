@@ -7,123 +7,128 @@
 		<!--<link rel="stylesheet" href="./HFAI_files/css" />-->
 		<style>
 		body{
+			padding:0;
+			margin:0;
+			top:0;
+			left:0;
+			
+			//FROM-LEGACY;
 			background-color:#00141D;
 		}
-		header{
-			//----   BEGIN FROM-LEGACY  ----;
-			font-family:Helvetica, Arial, sans-serif;
-			background:-webkit-gradient( 
-				linear, left top, left bottom, 
-				from( rgba(225, 225, 255, 0.7)), 
-				to(rgba(225, 225, 255, 0.7)), 
-				color-stop(0.15,rgba(185, 218, 238, 1)), 
-				color-stop(0.85,rgba(185, 218, 238, 1)) ) 
-				repeat scroll 0 0 transparent;
-			text-shadow:2px 2px 3px rgba(0, 0, 110, 0.3);
-			//----  END FROM-LEGACY  ----;
-			
-			//testing area;
-			
-			//testing area;
-			padding:20px;
-			width:760px; //adds up to 800 with 20px padding on each side;
-			margin:10px auto;
-			text-align:center;
-			border-radius:5px;
-		}
-		header:hover{
-			//FROM-LEGACY:;
-			box-shadow: 
-				5px 5px 25px rgba(220,220,120,0.7), 
-				inset 0px 0px 95px rgba(210,210,255,0.6), 
-				inset 0px 0px 155px rgba(110,110,255,0.2);
-		}
-			header h1{
-				font-weight:normal;
-				margin:12px;
-				margin-bottom:0px;
+			div#mw{
+				width:800px;
 				padding:0px;
+				margin:auto;
 			}
-			header p{
-				margin:12px;
-				margin-top:0px;
-				font-size:13px;
-				font-style:italic;
-				//FROM-LEGACY:;
-				text-shadow:1px 1px 3px rgba(0, 220, 110, 0.3);
-				font-family:verdana, Helvetica, "Lucida Grande",Arial,"Lucida Sans",sans-serif;
-			}
-		nav{
-			background-color:rgba(187, 118, 187, 0.65);
-			position:absolute;
-			top:0px;
-			left:0px;
-		}
-		div#content{
-			width:630px;
-			padding:10px;
-			padding-left:160px;
-			margin:10px auto;
-			border-radius:5px;
-			background-color:#fcf;
-			position
-			
-			//TESTING;
-			//overflown content still sticking out. yuk!;
-			height:237px;
-			overflow:hidden;
-		}
-			article{
-				margin:10px 0;
-				padding:10px;
-				border-radius:5px;
-				background-color:#EDD6FC;
-			}
-				article p{
-					//margin-top:0;
+				header{
+					//----   BEGIN FROM-LEGACY  ----;
+					font-family:Helvetica, Arial, sans-serif;
+					background:-webkit-gradient(
+						linear, left top, left bottom, 
+						from( rgba(225, 225, 255, 0.7)), 
+						to(rgba(225, 225, 255, 0.7)), 
+						color-stop(0.15,rgba(185, 218, 238, 1)), 
+						color-stop(0.85,rgba(185, 218, 238, 1)))
+						repeat scroll 0 0 transparent;
+					text-shadow:2px 2px 3px rgba(0, 0, 110, 0.3);
+					//----  END FROM-LEGACY  ----;
+					
+					text-align:center;
+					border-radius:5px;
 				}
+				header:hover{
+					//FROM-LEGACY:;
+					box-shadow: 
+						5px 5px 25px rgba(220,220,120,0.7), 
+						inset 0px 0px 95px rgba(210,210,255,0.6), 
+						inset 0px 0px 155px rgba(110,110,255,0.2);
+				}
+					header h1{
+						font-weight:normal;
+					}
+					header p{
+						font-size:13px;
+						font-style:italic;
+						
+						//FROM-LEGACY;
+						text-shadow:1px 1px 3px rgba(0, 220, 110, 0.3);
+						font-family:verdana, Helvetica, "Lucida Grande",Arial,"Lucida Sans",sans-serif;
+					}
+				div#f100c{
+					position:fixed;
+					top:100;
+					left:0;
+					width:100%;
+					margin:0;
+					padding:0;
+				}
+					div#fwc{
+						width:800px;
+						margin:auto;
+						padding:0;
+					}
+						nav{
+							background-color:rgba(187, 118, 187, 0.65);
+						}
+				div#content{
+					border-radius:5px;
+					background-color:#fcf;
+				}
+					article{
+						border-radius:5px;
+						background-color:#EDD6FC;
+					}
+						article p{
+							//margin-top:0;
+						}
 		</style>
 	</head>
 	<body>
-		<header>
-			<h1>HFAI</h1>
-			<!--Technology, Create, Life!-->
-			<p>
-				overflown content slightly shown!! see bottom of div#content !!
-			</p>
-		</header>
-		<div id="content">
-			<nav>
-				<ul>
-					<li>简介</li>
-					<li>部门</li>
-					<li>竞赛</li>
-					<li>相册</li>
-				</ul>
-			</nav>
-			<article>
-				<p>华师附中AI机器人社，原名Automan Institute，是成立于2004年的以发展技术为核心的社团。经过几届同学的努力建设，现在的机器人社已经是华附占地面积最大的社团，现有成员20余人。
-				</p>
+		<div id="mw">
+			<header>
+				<h1>HFAI</h1>
+				<!--Technology, Create, Life!-->
 				<p>
-					Quisque semper tortor sagittis sapien eleifend mollis. Vestibulum eu mi lectus, et pellentesque odio. Nam leo risus, blandit ut scelerisque vel, bibendum vel metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu nibh ac nisl feugiat lacinia eget et lacus. Phasellus ornare tempus lorem rutrum hendrerit. Vivamus mattis arcu quis magna dapibus quis aliquet tellus blandit.
+					overflown content slightly shown!! see bottom of div#content !!
 				</p>
-			</article>
-			<article>
-				<h4>
-					placeholder text for second article
-				</h4>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis interdum convallis. Mauris porttitor odio at ante vestibulum vel ullamcorper odio suscipit. Suspendisse nec ligula mollis purus tempor porttitor. In nisl dolor, ornare egestas rhoncus quis, dignissim eu felis. Suspendisse quam erat, viverra congue pharetra mattis, laoreet vel magna. Quisque porta quam turpis, vitae tristique neque. Nullam non massa tellus, at aliquet sem. Curabitur consequat feugiat porttitor. Curabitur nulla mauris, tincidunt eu pharetra quis, molestie quis nisl. Maecenas tempor erat ut est laoreet fringilla. Nullam sit amet molestie lorem. Duis laoreet, augue consequat vestibulum lacinia, nunc risus aliquam arcu, vitae feugiat turpis felis ut nulla. Etiam mollis venenatis volutpat. Mauris sagittis mattis nibh, pulvinar blandit libero adipiscing nec. Phasellus et aliquet turpis.
-				</p>
-			</article>
-			<article>
-				<h4>
-					another placeholder
-				</h4>
-				<p>
-					Etiam nec pulvinar mi. Donec scelerisque metus sit amet magna volutpat et sagittis felis tincidunt. Nulla eget purus ac ipsum ultricies facilisis ut et nisl. Nullam velit nunc, tincidunt quis condimentum sed, malesuada aliquet risus. Duis consequat sollicitudin sem, id ullamcorper massa euismod id. Sed commodo tincidunt ullamcorper. Maecenas placerat metus a massa dictum suscipit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				</p>
-			</article>
+			</header>
+			<div id="f100c">
+				<div id="fwc">
+					<nav>
+						<ul>
+							<li>简介</li>
+							<li>部门</li>
+							<li>竞赛</li>
+							<li>相册</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div id="content">
+				<article>
+					<p>华师附中AI机器人社，原名Automan Institute，是成立于2004年的以发展技术为核心的社团。经过几届同学的努力建设，现在的机器人社已经是华附占地面积最大的社团，现有成员20余人。
+					</p>
+					<p>
+						Quisque semper tortor sagittis sapien eleifend mollis. Vestibulum eu mi lectus, et pellentesque odio. Nam leo risus, blandit ut scelerisque vel, bibendum vel metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu nibh ac nisl feugiat lacinia eget et lacus. Phasellus ornare tempus lorem rutrum hendrerit. Vivamus mattis arcu quis magna dapibus quis aliquet tellus blandit.
+					</p>
+				</article>
+				<article>
+					<h4>
+						placeholder text for second article
+					</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis interdum convallis. Mauris porttitor odio at ante vestibulum vel ullamcorper odio suscipit. Suspendisse nec ligula mollis purus tempor porttitor. In nisl dolor, ornare egestas rhoncus quis, dignissim eu felis. Suspendisse quam erat, viverra congue pharetra mattis, laoreet vel magna. Quisque porta quam turpis, vitae tristique neque. Nullam non massa tellus, at aliquet sem. Curabitur consequat feugiat porttitor. Curabitur nulla mauris, tincidunt eu pharetra quis, molestie quis nisl. Maecenas tempor erat ut est laoreet fringilla. Nullam sit amet molestie lorem. Duis laoreet, augue consequat vestibulum lacinia, nunc risus aliquam arcu, vitae feugiat turpis felis ut nulla. Etiam mollis venenatis volutpat. Mauris sagittis mattis nibh, pulvinar blandit libero adipiscing nec. Phasellus et aliquet turpis.
+					</p>
+				</article>
+				<article>
+					<h4>
+						another placeholder
+					</h4>
+					<p>
+						Etiam nec pulvinar mi. Donec scelerisque metus sit amet magna volutpat et sagittis felis tincidunt. Nulla eget purus ac ipsum ultricies facilisis ut et nisl. Nullam velit nunc, tincidunt quis condimentum sed, malesuada aliquet risus. Duis consequat sollicitudin sem, id ullamcorper massa euismod id. Sed commodo tincidunt ullamcorper. Maecenas placerat metus a massa dictum suscipit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+					</p>
+				</article>
+			</div>
 		</div>
 	</body>
 </html>
