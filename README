@@ -1,3 +1,3 @@
-nothing specific to say.
+this is a manually updated version of my project itself.
 
-just see commit messages.
+see ./ie.html for IE9 demo. some html5 tags were used, and thus IE7 & IE8 couldn't render properly. changing all the relevant tags into div's with id's would do the hack, but i couldn't bother.
