@@ -1,0 +1,306 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HFAI</title>
+		<script src="./HFAI_files/jquery.js"></script>
+		<!--<link rel="stylesheet" href="./HFAI_files/css" />-->
+		<style>
+		*{
+			transition:0.1s ease-out;
+			-webkit-transition:0.1s ease-out;
+			-moz-transition:0.1s ease-out;
+			-o-transition:0.1s ease-out;
+		}
+		body{
+			padding:0;
+			margin:0;
+			
+			//aesthetic;
+			//FROM-LEGACY;
+			background-color:#00141D;
+		}
+			div#mw{
+				width:800px;
+				padding:0px;
+				margin:0 auto;
+			}
+				header{
+					//important;
+					margin:10px auto;
+					
+					//aesthetic;
+					text-align:center;
+					border-radius:5px;
+					padding:20px;
+					
+					//FROM-LEGACY;
+					font-family:Helvetica, Arial, sans-serif;
+					background-color:rgb(185, 218, 238);//hack;
+					background:gradient(
+						linear, left top, left bottom, 
+						from( rgba(225, 225, 255, 0.7)), 
+						to(rgba(225, 225, 255, 0.7)), 
+						color-stop(0.15,rgba(185, 218, 238, 1)), 
+						color-stop(0.85,rgba(185, 218, 238, 1)))
+						repeat scroll 0 0 transparent;
+					background:-webkit-gradient(
+						linear, left top, left bottom, 
+						from( rgba(225, 225, 255, 0.7)), 
+						to(rgba(225, 225, 255, 0.7)), 
+						color-stop(0.15,rgba(185, 218, 238, 1)), 
+						color-stop(0.85,rgba(185, 218, 238, 1)))
+						repeat scroll 0 0 transparent;
+					background:-moz-gradient(
+						linear, left top, left bottom, 
+						from( rgba(225, 225, 255, 0.7)), 
+						to(rgba(225, 225, 255, 0.7)), 
+						color-stop(0.15,rgba(185, 218, 238, 1)), 
+						color-stop(0.85,rgba(185, 218, 238, 1)))
+						repeat scroll 0 0 transparent;
+					background:-o-gradient(
+						linear, left top, left bottom, 
+						from( rgba(225, 225, 255, 0.7)), 
+						to(rgba(225, 225, 255, 0.7)), 
+						color-stop(0.15,rgba(185, 218, 238, 1)), 
+						color-stop(0.85,rgba(185, 218, 238, 1)))
+						repeat scroll 0 0 transparent;
+					text-shadow:2px 2px 3px rgba(0, 0, 110, 0.3);
+				}
+				header:hover{
+					//FROM-LEGACY;
+					box-shadow: 
+						5px 5px 25px rgba(220,220,120,0.7), 
+						inset 0px 0px 95px rgba(210,210,255,0.6), 
+						inset 0px 0px 155px rgba(110,110,255,0.2);
+				}
+					header h1{
+						margin:0;
+						padding:0;
+						
+						//aesthetic;
+						font-weight:normal;
+					}
+					header p{
+						margin:0;
+						padding:0;
+						
+						//aesthetic;
+						font-size:13px;
+						font-style:italic;
+						
+						//FROM-LEGACY;
+						text-shadow:1px 1px 3px rgba(0, 220, 110, 0.3);
+						font-family:verdana, Helvetica, "Lucida Grande",Arial,"Lucida Sans",sans-serif;
+					}
+				div#f100c{
+					//important;
+					position:fixed;
+					top:0;
+					left:0;
+					width:100%;
+					margin:0;
+					padding:0;
+				}
+					div#fwc{
+						//important;
+						width:800px;
+						margin:135px auto 0;
+						padding:0;
+					}
+						nav{
+							z-index:1000;
+							
+							//aesthetic;
+							width:120px;
+							border-top-right-radius:5px;
+							border-bottom-right-radius:5px;
+							
+							//FROM-LEGACY;
+							background-color:rgba(187, 118, 187, 0.65);
+							box-shadow:
+								2px 3px 4px rgba(0,0,0,0.15),
+								-3px 3px 4px rgba(0,0,0,0.4),
+								3px 2px 4px rgba(0,0,0,0.6);
+						}
+						nav:hover{
+							//FROM-LEGACY;
+							background-color:rgba(127,38,167,0.7);
+						}
+							nav ul{
+								//aesthetic;
+								list-style-type:none;
+								margin:0;
+								padding:2px;
+							}
+								nav ul li{
+									margin-top:5px;
+									margin-bottom:5px;
+									margin-right:5px;
+									padding:0;
+									text-align:center;
+									
+									//FROM-LEGACY;
+									background-color:hsla(285, 69%, 77%, 0.95);
+								}
+								nav ul li:hover{
+									//FROM-LEGACY;
+									transform: 
+										translate(13px,0px);
+									-webkit-transform: 
+										translate(13px,0px);
+									-moz-transform: 
+										translate(13px,0px);
+									-o-transform: 
+										translate(13px,0px);
+									border-radius:7px;
+									box-shadow: 
+										inset 3px 3px 5px rgba(255,255,255,0.3),
+										3px 3px 5px rgba(0,0,0,0.3);
+								}
+									nav ul li a{
+										display:block;
+										margin:0;
+										padding:8px;
+										text-decoration:none;
+										color:#000;
+									}
+				div#content{
+					border-radius:5px;
+					padding-top:5px;
+					padding-bottom:5px;
+					padding-right:5px;
+					padding-left:130px;
+					
+					//FROM-LEGACY;
+					background-color:#fcf;
+				}
+					div#sf{
+						margin:0;
+						padding:0;
+						overflow:hidden;
+						width:665px;
+					}
+						div#slider{
+							/*
+							display:box;
+							box-orient:horizontal;
+							display:-webkit-box;
+							-webkit-box-orient:horizontal;
+							display:-moz-box;
+							-moz-box-orient:horizontal;
+							display:-o-box;
+							-o-box-orient:horizontal;
+							*/
+							
+							width:2660px;//665*4;
+							margin:0;
+							padding:0;
+							position:relative;
+							
+							transition:0.2s ease-out;
+							-webkit-transition:0.2s ease-out;
+							-moz-transition:0.2s ease-out;
+							-o-transition:0.2s ease-out;
+						}
+						div#slider.f1{
+							left:0;
+						}
+						div#slider.f2{
+							left:-665px;
+						}
+						div#slider.f3{
+							left:-1330px;
+						}
+						div#slider.f4{
+							left:-1995px;
+						}
+							div.card{
+								margin:0;
+								padding:5px;
+								width:655px;
+								
+								float:left;
+							}
+								article{
+									margin:0;
+									padding:5px;
+									border-radius:5px;
+									
+									//FROM-LEGACY;
+									background-color:#EDD6FC;
+								}
+									article p{
+										magin:0px;
+										padding:0px;
+										//margin-top:0;
+									}
+							div.clearboth{
+								clear:both;
+							}
+		</style>
+	</head>
+	<body>
+		<div id="mw">
+			<div id="f100c">
+				<div id="fwc">
+					<nav>
+						<ul>
+							<li id="li1"><a href="#c1">简介</a></li>
+							<li id="li2"><a href="#c2">部门</a></li>
+							<li id="li3"><a href="#c3">竞赛</a></li>
+							<li id="li4"><a href="#">相册</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<header>
+				<h1>HFAI</h1>
+				<!--Technology, Creation, Life!-->
+				<p>
+					Technology, Creation, Life!
+				</p>
+			</header>
+			<div id="content">
+				<div id="sf">
+					<div id="slider">
+						<div class="card" id="c1">
+							<article>
+								<h4>
+									简介
+								</h4>
+								<p>
+									华师附中AI机器人社，原名Automan Institute，是成立于2004年的以发展技术为核心的社团。经过几届同学的努力建设，现在的机器人社已经是华附占地面积最大的社团，现有成员20余人。
+								</p>
+								<p>
+									Quisque semper tortor sagittis sapien eleifend mollis. Vestibulum eu mi lectus, et pellentesque odio. Nam leo risus, blandit ut scelerisque vel, bibendum vel metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu nibh ac nisl feugiat lacinia eget et lacus. Phasellus ornare tempus lorem rutrum hendrerit. Vivamus mattis arcu quis magna dapibus quis aliquet tellus blandit.
+								</p>
+							</article>
+						</div>
+						<div class="card" id="c2">
+							<article>
+								<h4>
+									部门：placeholder text for second article
+								</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis interdum convallis. Mauris porttitor odio at ante vestibulum vel ullamcorper odio suscipit. Suspendisse nec ligula mollis purus tempor porttitor. In nisl dolor, ornare egestas rhoncus quis, dignissim eu felis. Suspendisse quam erat, viverra congue pharetra mattis, laoreet vel magna. Quisque porta quam turpis, vitae tristique neque. Nullam non massa tellus, at aliquet sem. Curabitur consequat feugiat porttitor. Curabitur nulla mauris, tincidunt eu pharetra quis, molestie quis nisl. Maecenas tempor erat ut est laoreet fringilla. Nullam sit amet molestie lorem. Duis laoreet, augue consequat vestibulum lacinia, nunc risus aliquam arcu, vitae feugiat turpis felis ut nulla. Etiam mollis venenatis volutpat. Mauris sagittis mattis nibh, pulvinar blandit libero adipiscing nec. Phasellus et aliquet turpis.
+								</p>
+							</article>
+						</div>
+						<div class="card" id="c3">
+							<article>
+								<h4>
+									竞赛：another placeholder
+								</h4>
+								<p>
+									Etiam nec pulvinar mi. Donec scelerisque metus sit amet magna volutpat et sagittis felis tincidunt. Nulla eget purus ac ipsum ultricies facilisis ut et nisl. Nullam velit nunc, tincidunt quis condimentum sed, malesuada aliquet risus. Duis consequat sollicitudin sem, id ullamcorper massa euismod id. Sed commodo tincidunt ullamcorper. Maecenas placerat metus a massa dictum suscipit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								</p>
+							</article>
+						</div>
+						<div class="clearboth"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
